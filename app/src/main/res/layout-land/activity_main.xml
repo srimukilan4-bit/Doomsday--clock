@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.pete.doomsdaywidget.ui.AtmosphereView
+        android:id="@+id/atmosphere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding">
+
+        <com.pete.doomsdaywidget.ui.ArcReactorView
+            android:id="@+id/reactor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1.7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="34sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:letterSpacing="0.14"
+                android:maxLines="1"
+                android:text="@string/title_doomsday"
+                android:textColor="#FF3DDC84"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:maxLines="1"
+                android:text="@string/date_label"
+                android:textColor="#FF86BFA0" />
+
+            <com.pete.doomsdaywidget.ui.CountdownView
+                android:id="@+id/countdown"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_audio"
+                    style="@style/ToolbarButton"
+                    android:contentDescription="@string/cd_play_audio"
+                    android:src="@drawable/ic_play" />
+
+                <ImageButton
+                    android:id="@+id/btn_share"
+                    style="@style/ToolbarButton"
+                    android:contentDescription="@string/cd_share"
+                    android:src="@drawable/ic_share" />
+
+                <ImageButton
+                    android:id="@+id/btn_fullscreen"
+                    style="@style/ToolbarButton"
+                    android:contentDescription="@string/cd_fullscreen"
+                    android:src="@drawable/ic_fullscreen" />
+
+                <ImageButton
+                    android:id="@+id/btn_settings"
+                    style="@style/ToolbarButton"
+                    android:contentDescription="@string/cd_settings"
+                    android:src="@drawable/ic_settings" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

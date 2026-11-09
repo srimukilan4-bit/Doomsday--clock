@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Doomsday Countdown</string>
+    <string name="widget_name">Doomsday Countdown</string>
+    <string name="widget_description">Live countdown to 17 December 2026 in the Doctor Doom / Iron Man theme.</string>
+
+    <string name="title_doomsday">DOOMSDAY IS COMING</string>
+    <string name="date_label">17 DECEMBER 2026</string>
+    <string name="widget_title">DOOMSDAY · 17 DEC 2026</string>
+
+    <string name="unit_months">MONTHS</string>
+    <string name="unit_days">DAYS</string>
+    <string name="unit_hours">HOURS</string>
+    <string name="unit_minutes">MINUTES</string>
+    <string name="unit_seconds">SECONDS</string>
+    <string name="countdown_description">%1$d months, %2$d days, %3$d hours, %4$d minutes, %5$d seconds remaining</string>
+
+    <string name="cd_settings">Settings</string>
+    <string name="cd_share">Share countdown</string>
+    <string name="cd_fullscreen">Enter fullscreen</string>
+    <string name="cd_play_audio">Play ticking audio</string>
+    <string name="cd_pause_audio">Pause ticking audio</string>
+    <string name="cd_back">Back</string>
+    <string name="share_chooser">Share countdown</string>
+
+    <string name="settings_title">Settings</string>
+
+    <string name="section_theme">THEME PREVIEW</string>
+    <string name="theme_auto">Automatic</string>
+    <string name="theme_doom">Doctor Doom</string>
+    <string name="theme_iron">Iron Man</string>
+    <string name="theme_info">Automatic (Asia/Kolkata time): Doctor Doom until %1$s, blending smoothly into Iron Man, fully Iron Man from %2$s. A manual preview applies to the app and the widget until you switch back to Automatic.</string>
+
+    <string name="section_wallpaper">WALLPAPER</string>
+    <string name="wallpaper_choose">Choose image</string>
+    <string name="wallpaper_restore">Restore default</string>
+    <string name="wallpaper_default">Using the default cinematic background.</string>
+    <string name="wallpaper_custom">Using your imported wallpaper (also shown in the widget).</string>
+    <string name="wallpaper_imported">Wallpaper applied.</string>
+    <string name="wallpaper_failed">That image could not be read. Please choose another one.</string>
+    <string name="wallpaper_unavailable">Your wallpaper could not be loaded, so the default background is being used.</string>
+    <string name="cd_wallpaper_preview">Wallpaper preview</string>
+
+    <string name="section_audio">TICKING AUDIO</string>
+    <string name="audio_choose">Choose audio file</string>
+    <string name="audio_remove">Remove</string>
+    <string name="audio_play">Play</string>
+    <string name="audio_pause">Pause</string>
+    <string name="audio_stop">Stop</string>
+    <string name="audio_volume">Volume</string>
+    <string name="audio_none">No audio file selected.</string>
+    <string name="audio_selected_fmt">Selected: %1$s</string>
+    <string name="audio_permission_lost">Access to this file was lost. Please choose it again.</string>
+    <string name="audio_note">Audio only plays when you press Play, and stops when you leave the app. Supported: MP3, WAV, OGG, M4A/AAC and FLAC.</string>
+    <string name="audio_none_selected">Choose a ticking audio file in Settings first.</string>
+    <string name="audio_error">That audio file could not be played. It may be missing, unsupported or no longer accessible. Please choose it again.</string>
+    <string name="audio_unsupported">That file is not a playable audio file.</string>
+    <string name="audio_saved">Audio file selected.</string>
+
+    <string name="section_battery">BATTERY</string>
+    <string name="battery_title">Battery-friendly mode</string>
+    <string name="battery_desc">Turns off the reactor, ember and tick animations and does not keep the screen awake in fullscreen. The countdown itself stays exact. Android\'s own Battery Saver has the same effect automatically.</string>
+
+    <string name="restore_defaults">Restore all defaults</string>
+    <string name="restore_title">Restore defaults?</string>
+    <string name="restore_message">This resets the theme, wallpaper, audio file, volume and battery mode.</string>
+    <string name="restore_confirm">Restore</string>
+    <string name="cancel">Cancel</string>
+    <string name="restored">Defaults restored.</string>
+
+    <string name="about_text">Target: 17 December 2026, 12:00 AM IST (Asia/Kolkata). To add the widget: long-press an empty spot on your home screen, open Widgets and choose Doomsday Countdown.</string>
+</resources>
